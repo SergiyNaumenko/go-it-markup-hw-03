@@ -1,2 +1,2 @@
-# go-it-markup-hw-03
+# goit-markup-hw-03
 Моя третя домашка
