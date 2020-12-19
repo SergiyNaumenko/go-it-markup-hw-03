@@ -25,10 +25,11 @@ body {
     font-family: 'Roboto', sans-serif;
 
     color: var(--primary-text-color);
-
-    /* color: var(--primary-text-color); */
 }
-h1, h2, h3 {
+
+h1, 
+h2, 
+h3 {
     font-family: 'Roboto', sans-serif;
     font-weight: 900;
 }
@@ -57,22 +58,28 @@ p {
 /* Common */
 
 .container {
+    display: flex;
+    align-items: center;
+
     width: 1170px;
     margin-left: auto;
     margin-right: auto;
-
+    padding: 15px;
+    padding-right: 15px;
 }
 
 /* Header */
 
 header {
     
-    /* background-color: var(--background-head-color); */
-    background-color: tomato;
-} 
+    background-color: var(--background-head-color);
+}
+
 
 /* Logo */
-.logo {
+.logo-blue {
+
+    margin-right: 95px;
 
     font-family: Raleway;
     font-weight: 700;
@@ -83,16 +90,29 @@ header {
     color: var(--accent-color);
 
 }
-.logo-header {
+.logo-black {
     color: var(--title-text-color);
 }
-.logo-footer {
+.logo-white {
     color: var(--hero-text-color);
 
 }
 
 /* Site-nav */
+
+/* Задає колір і шрифт для навігації */
+.site-nav .item {
+    display: inline-flex;
+
+}
+.site-nav > .item:not(:last-child) {
+    margin-right: 40px;
+}
+
 .site-nav .link {
+    display: block;
+    padding: 32px 0;
+
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14px;
@@ -106,16 +126,27 @@ header {
 }
 .site-nav .link.current {
     color: var(--accent-color);
-} 
+}
 
 /* Adrress effect */
-.adrress-header .adrress,
-.adrress-footer .adrress{
-    color: var(--primary-text-color);
 
+.adrress-header {
+
+    display: flex;
+    margin-left: auto;
+    margin-right: 52px;
+}
+
+.adrress-header .adrress,
+.adrress-footer .adrress {
+
+    color: var(--primary-text-color);
 }
 
 .adrress-header .adrress {
+    display: block;
+    padding: 32px 0;
+    
     font-family: Roboto;
     font-weight: 500;
     font-size: 14px;
@@ -129,7 +160,10 @@ header {
 .adrress-footer .adrress:focus{
     color: var(--accent-color);
 }
-
+.mail-link {
+    margin-left: auto;
+    margin-right: 40px;
+}
 .adrress-post {
     font-style: normal;
     font-weight: 400;
@@ -153,7 +187,14 @@ header {
 }
 .hero-title {
     text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto 30px;
 
+    padding-top: 200px;
+    padding-bottom: 200px;
+    
     font-size: 44px;
     line-height: 1.36;
     letter-spacing: 0.06em;
@@ -162,14 +203,20 @@ header {
     color: var(--hero-text-color);
 }
 
+.container .hero-section {
+    
+}
 /* Button */
 .button {
+
     font-weight: 700;
     font-size: 16px;
     line-height: 1.87;
     align-items: center;
     text-align: center;
     letter-spacing: 0.06em;
+
+    cursor: pointer;
 
     color: var(--hero-text-color); 
     background-color: var(--accent-color);
