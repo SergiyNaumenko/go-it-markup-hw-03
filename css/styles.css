@@ -58,7 +58,7 @@ p {
 /* Common */
 
 .container {
-    display: flex;
+    display: inline-flex;
     align-items: center;
 
     width: 1170px;
@@ -69,10 +69,20 @@ p {
 /* Header */
 
 header {
-    
+
     background-color: var(--background-head-color);
 }
 
+.head {
+    display: flex;
+    align-items: center;
+
+    width: 1170px;
+    padding: 0 15px;
+	margin: 0 auto;
+
+
+}
 
 /* Logo */
 .logo-blue {
@@ -108,7 +118,7 @@ header {
 }
 
 .site-nav .link {
-    display: block;
+    display: inline;
     padding: 32px 0;
 
     font-weight: 500;
@@ -163,7 +173,8 @@ header {
     margin-right: 40px;
 }
 .adrress-post {
-
+    margin-top: 20px;
+    margin-bottom: 9px;
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
@@ -364,7 +375,8 @@ margin-bottom: 10px;
 }
 
 .adrress-footer .adrress-item:not(:last-child) {
-	margin-bottom: 9px;
+    margin-bottom: 9px;
+    
 }
 
 
