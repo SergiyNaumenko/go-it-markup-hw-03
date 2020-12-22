@@ -328,6 +328,10 @@ header {
 }
 
 /* Employment */
+.employment-section {
+    padding-top: 0;
+    padding-bottom: 94px;
+}
 
 .container {
     display: block;
@@ -388,7 +392,6 @@ header {
 }
 
 .duties {
-    margin-bottom: 90px;
     font-weight: normal;
     font-size: 16px;
     line-height: 1.19;
@@ -455,7 +458,7 @@ header {
                 /* All offers */
  
 .joboffer {
-    width: 1230px;
+    width: 1200px;
     padding: 0 15px;
     margin: 0 auto;
 }
