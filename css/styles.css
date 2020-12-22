@@ -110,7 +110,10 @@ header {
 }
 
 /* Site-nav */
-
+.site-nav {
+    display: flex;
+    align-items: center;
+}
 .site-nav .item {
     display: inline-flex;
 }
