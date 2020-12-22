@@ -70,6 +70,8 @@ p {
 /* Header */
 
 header {
+    
+
     border-bottom: 1px solid var(--background-secondary-color);
 
     background-color: var(--background-head-color);
@@ -198,6 +200,8 @@ header {
 
 /* Hero */
 .hero {
+    padding-top: 200px;
+    padding-bottom: 200px;
     text-align: center;
 
     background-color: var(--background-hero-footer-color);
@@ -207,8 +211,7 @@ header {
     display: inline-block;
 
     width: 696px;
-    padding-top: 200px;
-    padding-bottom: 200px;
+    
     
 }
 
@@ -282,12 +285,12 @@ header {
 }
 
 /* Feature-list */
-
-.feature-list {
-    display: flex;
-
+.section {
     padding-top: 94px;
     padding-bottom: 94px;
+} 
+.feature-list {
+    display: flex;
 }
 .feature-benefits:not(:nth-child(4n)) {
     margin-right: 30px;
@@ -356,7 +359,6 @@ header {
 .team-list {
     display: flex;
     justify-content: space-between;
-    padding-bottom: 94px;
     border-radius: 0px;
 }
 
