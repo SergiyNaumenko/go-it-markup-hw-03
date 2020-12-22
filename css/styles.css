@@ -349,7 +349,7 @@ header {
 }
 
 /* Our-team */
-.section-bgc {
+.team-section {
     background-color: var(--background-secondary-color);
 }
 
@@ -369,7 +369,7 @@ header {
 }
 
 .team-list .person {
-margin-bottom: 10px;
+    margin-bottom: 10px;
 
     font-weight: 500;
     font-size: 16px;
