@@ -406,14 +406,14 @@ margin-bottom: 10px;
 
 /* Butoons */
 .portfolio {
+    padding-top: 94px;
     padding-bottom: 94px;
 }
 
 .filter-item {
 	display: flex;
 	justify-content: center;
-    margin-bottom: 50px;
-    margin-top: 94px;
+    margin-bottom: 94px;
 }
 
 .filter-list:not(:last-child) {
